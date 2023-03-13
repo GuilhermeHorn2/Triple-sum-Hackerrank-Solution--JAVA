@@ -1,0 +1,39 @@
+package mc322;
+
+public class lab01 {
+
+	public static void main(String[] args) {
+		// Triple sum Hackerrank Solution
+	
+    int []a = {3,5,7};
+    int[]b = {3,6};
+    int []c = {4,6,9};
+    triple(a,b,c);
+		
+	}
+	public static void triple(int[] a,int[] b,int[] c) {
+		//p <= q && q >= r
+		String s = "";
+		int p = 0;
+		int q = 0;
+		int r  = 0;
+		for(int i = 0;i < a.length;i++){
+			//
+			for(int j = 0;j < b.length;j++){
+				//
+				for(int k = 0;k < c.length;k++){
+					//
+					if(a[i] <= b[j] && b[j] >= c[k]){
+						s += a[i];
+						s += b[j];
+						s += c[k];		
+						s += "/";
+					}
+				}
+			}
+		}
+		System.out.println(s);
+	
+		
+	}
+}
